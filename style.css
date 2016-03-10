@@ -1,4 +1,17 @@
 body
 {
-    background-color: #555775;
+    background-image: -webkit-gradient(linear, left, right, from(red), to(limegreen));
+    background-image: -webkit-linear-gradient(left, red, limegreen);
+    background-image: -moz-linear-gradient(left, red, limegreen);
+    background-image: linear-gradient(to right, red, limegreen);
+}
+
+.Content
+{
+    border: 5px solid black;
+
+}
+.Center
+{
+    text-align: center;   
 }
