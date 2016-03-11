@@ -1,17 +1,31 @@
 body
 {
-    background-image: -webkit-gradient(linear, left, right, from(red), to(limegreen));
-    background-image: -webkit-linear-gradient(left, red, limegreen);
-    background-image: -moz-linear-gradient(left, red, limegreen);
-    background-image: linear-gradient(to right, red, limegreen);
+    
 }
 
 .Content
 {
-    border: 5px solid black;
 
 }
 .Center
 {
     text-align: center;   
+}
+.Login_topcorner
+{
+    width: 90px;
+    height: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    
+}
+.not_in_use
+{
+    background-image: -webkit-gradient(linear, left, right, from(red), to(limegreen));
+    background-image: -webkit-linear-gradient(left, red, limegreen);
+    background-image: -moz-linear-gradient(left, red, limegreen);
+    background-image: linear-gradient(to right, red, limegreen);
+    
+    border: 5px solid black;
 }
