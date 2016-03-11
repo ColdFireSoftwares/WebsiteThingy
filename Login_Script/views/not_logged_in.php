@@ -15,7 +15,7 @@ if (isset($login)) {
 ?>
 
 <!-- login form box -->
-<form method="post" action="index.php" name="loginform">
+<form method="post" action="login_page.php" name="loginform">
 
     <label for="login_input_username">Username</label>
     <input id="login_input_username" class="login_input" type="text" name="user_name" required />
@@ -26,4 +26,5 @@ if (isset($login)) {
     <input type="submit"  name="login" value="Log in" />
 
 </form>
-<!-- Registreing: <a href="register.php">registrer</a> -->
+<a href="../index.php">homepage</a>
+<!-- <a href="register.php">registrer</a> -->

@@ -20,6 +20,12 @@ body
     right: 0;
     
 }
+.Topcorner
+{
+    position: fixed;
+    top: 1px;
+    right: 4px; 
+}
 .not_in_use
 {
     background-image: -webkit-gradient(linear, left, right, from(red), to(limegreen));

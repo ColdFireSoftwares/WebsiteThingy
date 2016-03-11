@@ -34,8 +34,8 @@
 
           <p>E-mail: ahkunst@pejrup.dk, allan.hansen.kunst@gmail.com eller pah3105@post12.tele.dk</p>
         </div>
-        <div class="Login_topcorner">
-            <a href="Login_Script/index.php">Admin Login</a>
+        <div class="Topcorner">
+            <a href="Login_Script/login_page.php">Admin Login</a>
         </div>
     </div>
 
