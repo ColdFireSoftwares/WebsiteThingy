@@ -1,0 +1,10 @@
+.topcorner
+{
+    position: fixed;
+    top: 4px;
+    right: 2px; 
+}
+.center
+{
+    text-align: center;
+}

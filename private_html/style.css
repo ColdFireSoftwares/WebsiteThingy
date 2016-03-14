@@ -1,17 +1,21 @@
-body
-{
-    background-image: -webkit-gradient(linear, left, right, from(red), to(limegreen));
-    background-image: -webkit-linear-gradient(left, red, limegreen);
-    background-image: -moz-linear-gradient(left, red, limegreen);
-    background-image: linear-gradient(to right, red, limegreen);
-}
-
 .Content
 {
-    border: 5px solid black;
+    border: 1px solid black;
 
 }
 .Center
 {
     text-align: center;   
+}
+.pictures
+{
+    border: 1px solid orangered;
+    height: 200px;
+    width: 200px;
+}
+.picture_1
+{
+    height: 200px;
+    width: 200px;
+    border: 1px solid blue;
 }
