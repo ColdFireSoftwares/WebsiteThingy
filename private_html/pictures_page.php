@@ -13,10 +13,12 @@
       <h1 class="Center">Website under contrution</h1>
     </div>
         <?php
+            include("thumbnailscript.php");
             echo '<div class="pictures">';
             // <img src="../medie/images/background.JPG" width="200" height="200">
             // look at this link :DD :http://salman-w.blogspot.dk/2008/10/resize-images-using-phpgd-library.html
             $dir          = '../medie/images/raw';
+            $targetdir    =  '../medie/images/thumbnails';
             $file_display = array(
                 'JPG',
                 'jpg',
@@ -25,28 +27,26 @@
                 'gif'
             );
 
-            if (file_exists($dir) == false) {
+            if (file_exists($dir) == false) 
+            {
                 echo 'Directory \'', $dir, '\' not found!';
-            } else {
+            } 
+            else 
+            {
                 $pictureID = 0;
-                $dir_contents = scandir($dir);
-
-                foreach ($dir_contents as $file) {
-                    $file_type = strtolower(end(explode('.', $file)));
-                    
-                    if ($file !== '.' && $file !== '..' && in_array($file_type, $file_display) == true) {
-                        $pictureID += 1;
-                        
-                        $image = new Imagick($dir/$file);
-                        $image->setImageResolution(500, 500);
-                        $image->writeImage($file + "500dpi" + $file_type);
-                        
-                        echo '<div class="picture_' .$pictureID. '">';
-                        echo '<img src="', $dir, '/', $file, '"/>';
-                        echo '</div>';
-                    }
+                foreach (scandir($dir) as $file) 
+                {
+                    $pictureID ++;
+                    $filepath = $targetdir + $pictureID;
+                    generate_image_thumbnail($file, $filepath);
                 }
-            }
+                foreach (scandir($targetdir) as $file)
+                {
+                    echo '<div class="picture_' .$pictureID. '">';
+                    echo '<img src="', $dir, '/', $file, '"/>';
+                    echo '</div>';
+                }
+             }
             echo '</div>';
         ?>
 
