@@ -13,18 +13,23 @@ if (isset($login)) {
     }
 }
 ?>
+<div class="loginForm">
+    <!-- login form box -->
+    <form method="post" action="login_page.php" name="loginform">
 
-<!-- login form box -->
-<form method="post" action="login_page.php" name="loginform">
+        <label for="login_input_username">Username</label>
+        <input id="login_input_username" class="login_input" type="text" name="user_name" required />
+        <br>
+        <label for="login_input_password">Password</label>
+        <input id="login_input_password" class="login_input" type="password" name="user_password" autocomplete="off" required />
+        <br>
+        <div class="align_button_left"
+        <input type="submit"  name="login" value="Log in" />
 
-    <label for="login_input_username">Username</label>
-    <input id="login_input_username" class="login_input" type="text" name="user_name" required />
-
-    <label for="login_input_password">Password</label>
-    <input id="login_input_password" class="login_input" type="password" name="user_password" autocomplete="off" required />
-
-    <input type="submit"  name="login" value="Log in" />
-
-</form>
-<a href="../index.php">homepage</a>
+    </form>
+</div>
+<div class="Topcorner">
+    <a href="../index.php">homepage</a>
+</div>
+    
 <!-- <a href="register.php">registrer</a> -->

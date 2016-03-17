@@ -8,3 +8,12 @@
 {
     text-align: center;
 }
+.loginForm
+{
+    position: absolute;
+    border: 1px dotted black;
+    margin-top: 25%;
+    margin-left: 32%;
+    margin-right: 30%;
+    margin-bottom: 25%;
+}
