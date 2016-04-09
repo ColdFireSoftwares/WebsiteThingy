@@ -30,7 +30,7 @@
             {
                 echo 'Directory \'', $dir, '\' not found!';
             } 
-            else 
+            else
             {
                 $pictureID = 0;
                 foreach (scandir($dir) as $file) 
